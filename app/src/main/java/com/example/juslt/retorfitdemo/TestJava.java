@@ -13,7 +13,7 @@ import java.util.concurrent.locks.Lock;
 
 
 public class TestJava {
-
+    private String a = "a";
     public static void main(String[] args) throws InterruptedException {
 //        MyRun run = new MyRun();
 //        new Thread(run.run).start();
@@ -38,5 +38,10 @@ public class TestJava {
 
     }
 
+    class InnerClass{
+        public void showA(){
+            a = "b";
+        }
+    }
 
 }

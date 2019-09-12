@@ -17,6 +17,8 @@ class DrawView @JvmOverloads constructor(context: Context, attributeSet: Attribu
 
     init {
         mDragHelper = ViewDragHelper.create(this, 1f, ViewDragCallback(paddingLeft, width, paddingTop, height))
+        requestLayout()
+        invalidate()
     }
 
     override fun onInterceptTouchEvent(ev: MotionEvent?): Boolean {

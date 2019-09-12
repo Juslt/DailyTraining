@@ -66,6 +66,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BindService"/>
+    <Button
+            android:id="@+id/btn_fragment_lazy_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fragment_lazy_load"/>
 
     <!--<com.airbnb.lottie.LottieAnimationView-->
             <!--android:id="@+id/animation_view"-->

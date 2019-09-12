@@ -13,6 +13,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".pager.FragmentPagerActivity">
+        </activity>
         <activity android:name=".handler.HandlerActivity">
         </activity>
         <activity android:name=".stick_layout.StickLayoutActivity">
@@ -28,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <service android:name=".service.TestService"/>
     </application>
 
