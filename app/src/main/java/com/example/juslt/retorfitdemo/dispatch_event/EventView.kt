@@ -14,12 +14,12 @@ import android.widget.TextView
 class EventView @JvmOverloads constructor(context:Context,attributeSet: AttributeSet?=null,defInt:Int=0):Button(context,attributeSet,defInt){
 
     override fun dispatchTouchEvent(event: MotionEvent?): Boolean {
-        Log.e("===","view_dispatchTouchEvent-->${event!!.action}")
+        Log.e("===${this.javaClass.name}","view_dispatchTouchEvent-->${event!!.action}")
         return super.dispatchTouchEvent(event)
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
-        Log.e("===","view_onTouchEvent-->${event!!.action}")
+        Log.e("=== ${this.javaClass.name}","view_onTouchEvent-->${event!!.action}")
         return true
     }
 }
